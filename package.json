@@ -1,0 +1,23 @@
+{
+  "name": "WannaBuild",
+  "version": "1.0.0",
+  "description": "Web Application To Manage Applications I Want To Build",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zuzuta22/WannaBuild.git"
+  },
+  "keywords": [
+    "react",
+    "flux"
+  ],
+  "author": "zuzu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zuzuta22/WannaBuild/issues"
+  },
+  "homepage": "https://github.com/zuzuta22/WannaBuild"
+}
