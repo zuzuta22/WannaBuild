@@ -19,5 +19,15 @@
   "bugs": {
     "url": "https://github.com/zuzuta22/WannaBuild/issues"
   },
-  "homepage": "https://github.com/zuzuta22/WannaBuild"
+  "homepage": "https://github.com/zuzuta22/WannaBuild",
+  "dependencies": {
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
+  },
+  "devDependencies": {
+    "babelify": "^6.4.0",
+    "browserify": "^12.0.0",
+    "gulp": "^3.9.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
 }
