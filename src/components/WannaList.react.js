@@ -12,21 +12,28 @@ var WannaList = React.createClass({
   render: function () {
     return (
       <div className="wannaBuild">
-        <ul>
-          {
-            this.props.wannaItems.map(function(e,i){
-              return (
-                <div key={i}>
-                  <li>
-                    {e.title} # {e.status} &nbsp;
-                    <span onClick={this.getItemDone.bind(this,i)}>Done</span>
-                    <span onClick={this.getItemUninterested.bind(this, i)}>Uninterested</span>
-                  </li>
-                </div>
-              )
-            }, this)
-          }
-        </ul>
+        <table className="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+          <tbody>
+            {
+              this.props.wannaItems.map(function(e,i){
+                return (
+                    <tr key={i}>
+                      <td className="mdl-data-table__cell--non-numeric">
+                        {e.title}
+                      </td>
+                      <td>{e.status}</td>
+                      <td>
+                        <i className="material-icons" onClick={this.getItemDone.bind(this,i)}>done</i>
+                      </td>
+                      <td>
+                        <i className="material-icons" onClick={this.getItemUninterested.bind(this, i)}>thumb_down</i>
+                      </td>
+                    </tr>
+                )
+              }, this)
+            }
+          </tbody>
+        </table>
       </div>
     );
   }

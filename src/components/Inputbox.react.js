@@ -16,13 +16,16 @@ var Inputbox = React.createClass({
   render: function() {
     return (
       <div className="inputbox">
-        <input type="text"
-               value={this.props.posted_data}
-               placeholder="What do you want to build?"
-               onChange={this._onChange}
-               onKeyPress={this._onKeyPress}
-               autofocus />
-        <p>Please hit Enter after typing</p>
+        <div className="mdl-textfield mdl-js-textfield">
+          <input type="text"
+                 className="mdl-textfield__input"
+                 id="item-textfield"
+                 value={this.props.posted_data}
+                 onChange={this._onChange}
+                 onKeyPress={this._onKeyPress}
+                 autofocus />
+               <label className="mdl-textfield__label" classFor="item-textfield">Fill what do you wanna build...</label>
+        </div>
       </div>
     );
   }

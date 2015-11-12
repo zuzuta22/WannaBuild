@@ -17,7 +17,6 @@ var WannaItem = React.createClass({
   _onAddItem: function(e) {
     var posted_data = this.state.posted_data;
     var items = this.state.items;
-    // console.log(posted_data);
 
     items.push({title: e.target.value, status: 0});
     this.setState({
@@ -28,7 +27,6 @@ var WannaItem = React.createClass({
 
   _onChange: function(value) {
     this.setState({posted_data: value});
-    // console.log(value + " in _onChange");
   },
 
   _getItemDone: function(index) {
